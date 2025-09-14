@@ -26,7 +26,7 @@ public class SistemaOperacional {
             return false;
         }
 
-        float tempoExecucao = (float) p.getQuantidadeOperacoes() / (computador.getOperacoesPorSegundo().floatValue() * computador.getNucleos());
+        float tempoExecucao = (float) p.getQuantidadeOperacoes() / ((float)computador.getOperacoesPorSegundo() * computador.getNucleos());
 
 
         System.out.println("Programa executado com sucesso!");
